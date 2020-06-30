@@ -7,7 +7,7 @@ const manifest = require('./public/vendor/vendor-manifest.json');
 // console.log(process.env)
 
 module.exports = {
-
+  // publicPath: './',
   // ignore aready exist
   configureWebpack: {
     plugins: [
