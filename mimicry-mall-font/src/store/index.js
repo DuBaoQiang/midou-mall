@@ -4,10 +4,10 @@ import Vuex from 'vuex';
 
 const moudlesFiles = require.context('./modules', false, /\.js$/);
 
-const modules = modulesFiles.keys().reduce((modules, modulePath) => {
+const modules = moudlesFiles.keys().reduce((modules, modulePath) => {
     // set './app.js' => 'app'
     const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1');
-    modules[moduleName] = modulesFiles(modulePath).default;
+    modules[moduleName] = moudlesFiles(modulePath).default;
     return modules;
 
 }, {})
