@@ -27,7 +27,7 @@ module.exports = {
   // Proxy setting
   devServer: {
     // hot: true
-    open: true,
+    open: "Chrome",
     disableHostCheck:true
   }
 }
