@@ -28,6 +28,7 @@ module.exports = {
   devServer: {
     // hot: true
     open: "Chrome",
-    disableHostCheck:true
+    disableHostCheck:true,
+    // publicPath: '/'
   }
 }
