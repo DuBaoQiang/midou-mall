@@ -1,6 +1,6 @@
 <template>
   <div class="mimicry-header">
-    这是首页
+    这是全局的header
   </div>
 </template>
 <script>
