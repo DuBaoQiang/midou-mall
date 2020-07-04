@@ -1,6 +1,6 @@
 <template>
   <div class="mimicry-footer">
-    这是底部通栏
+    Footer
   </div>
 </template>
 <script>

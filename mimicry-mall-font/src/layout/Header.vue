@@ -1,6 +1,6 @@
 <template>
   <div class="mimicry-header">
-    这是全局的header
+    Header
   </div>
 </template>
 <script>
