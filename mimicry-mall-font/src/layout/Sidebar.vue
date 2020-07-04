@@ -1,11 +1,38 @@
 <template>
   <div class="mimicry-sidebar">
-    sidebar
+    {{count.count}}
+    <button @click="changeName">Click</button>
+    <br/>
+    {{name}}
   </div>
 </template>
 <script>
+import {ref, onMounted, toRefs, reactive} from 'vue'
 export default {
-  name: 'Sidebar'
+  name: 'Sidebar',
+  setup(props, context) {
+    const count  = ref({
+      count: 1
+    })
+
+    const changeName = () => {
+      state.name = '111'
+    }
+
+    const state = reactive({
+      name: 'baoqiang',
+      age: 18
+    })
+    onMounted(() => {
+      console.log(context)
+      console.log(props)
+    })
+    return {
+      ...toRefs(state),
+      count,
+      changeName
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
