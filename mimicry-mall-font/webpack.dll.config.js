@@ -11,7 +11,7 @@ function resolvePath(filePath) {
 
 module.exports = {
   entry: {
-    vendor: ['vue', 'vue-router', 'vuex', 'axios']
+    vendor: ['vue', 'vue-router', 'vuex', 'axios', 'nprogress']
   },
   output: {
     path: resolvePath(dllPath),
